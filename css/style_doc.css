@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/************** AQUÍ VAN LOS ESTILOS DE LAS SGTES. PARTES DEL SITIO *************/
+/*
+01 GENERAL    ->  ESTILOS GENERALES
+02 HEADER     ->  ESTILOS DE LA CABECERA
+03 LOGIN      ->  ESTILOS DE LA PANTALLA DE LOGIN  -> index.php
+04 FOOTER     ->  ESTILOS DEL FOOTER
+*/
+
+/****** GENERAL ******/
+
+/* Colores del sitio:
+        background:        #F2F2F2;     GRIS CLARO
+        header:            #DDF2F7      AZUL CLARO
+		headings(h1):      #222;        CASI NEGRO      
+		normal text:       #626262;     GRIS CLARO  
+	
+		links: #888;
+        
+    Fin Colores */
+ 
+  body {
+  font: 81.25% arial, helvetica, sans-serif;
+  background: #F2F2F2;
+  color: #626262;
+  line-height: 1;
+  direction: ltr; 
+  }
+  
+  a {
+  color: #3C73D8;
+  text-decoration: none;
+  }
+  a:active {
+  color: #000000;
+  }
+  a:hover {
+  text-decoration: underline;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+  font-size: 1.54em;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0 0 .46em;
+  }
+  
+  p {
+  line-height: 17px;
+  margin: 0 0 1em;
+  }
+  ol, ul {
+  list-style: none;
+  /*line-height: 17px; */
+  /*  margin: 0 0 1em; */
+  }
+  li {
+  /* margin: 0 0 .5em; */
+  }
+  table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+  strong {
+  color: #222;
+  }
+
+/****** HEADER ******/
+
+  header   {
+  width:100%;
+  clear: both;
+  background-color: #DDF2F7;
+  height:120px;
+  border: 1px solid #a8edfc; 
+  }
+  
+  .banner {                        /* clase para el banner */
+  width: 470px;    /* 470px */
+  height: 120px;   /* 120px */ 
+  background-image:url(../images/banner.png);  
+  float:left;
+  }
+
+/****** LOGIN ******/
+
+.main_content {                 /* clase para el contenedor */     
+  position: relative;
+  height: auto;
+  min-height: 390px;
+  width:95%;
+  padding: 1%;
+  clear: both; 
+  display: block;
+  background-color: #FEFEFE;   /* #DDF2F7 */
+  margin: 1.5% auto 1.5%;
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #a8edfc;
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
+  -o-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .left_box_form  { 
+  width: 30%;
+  min-width: 300px;
+  min-height: 300px;
+  height: auto;
+  background-color: #dcf2f7;
+  border: 2px solid #b1dee8;
+  margin: 35px 0 3% 3%;
+  padding-bottom: 12px;
+  border-radius: 8px 8px;
+  float: left;
+  }
+	
+  .top_form  { 
+  width: 100%;
+  /* min-width: 375px; */
+  height: 60px;
+  background-image: url(../images/t_b1.jpg);
+  background-repeat: repeat-x;
+  text-align: center;
+  border: 1px solid #125a87;
+  position: relative;
+  border-radius: 8px 8px 0 0;
+  float: left;
+  }
+  
+  .h_login  { 
+  color:#fff;
+  font-size:23px;
+  margin-top:13px;
+  text-shadow: 1px 0.1em 1px #333;
+  }
+
+  .error{
+  color: #d10716;
+  font-size: 14px;
+  }
+  
+  .form_login{ 
+  margin: 90px 0 0 13% ;
+  
+  }
+  
+  .n1  { 
+  font-size:16px;
+  margin: 15px 10px 3px 10px;
+  color:#3a678e;
+  }
+  
+  .input_login  { 
+  background-color:#fff;
+  border: 1px solid #aed4dd;
+  width: 76%;
+  height: 30px;
+  padding-left: 5px;
+  color:#4f909e;
+  margin: 3px 10px 10px 10px;
+  }
+
+  .input_login:hover  {
+  border:1px solid #e69d2a;
+  }
+
+  .input_login:focus  { 
+  background-color:#f7b742;
+  border:1px solid #e69d2a;
+  color:#fff;
+  }
+  
+  a.normal_buttom  { 
+  text-decoration:none;
+  background-image:url(../images/b_b1.jpg);
+  padding:5px 15px;
+  border:1px solid #eb9e30;
+  font-size:14px; 
+  color:#000;
+  float: right;
+  margin: 15px 20% 0 0;
+  border-radius: 3px 3px;
+  }
+ 
+  a.normal_buttom:hover  {
+  background-image:url(../images/b_b1_hover.jpg);
+  border:1px solid #95d3e2;
+  }
+
+  a.normal_buttom:active  {
+  background-image:url(../images/b_b1_hover.jpg);
+  border:1px solid #5992f0;
+  }
+ 
+  .right_box_container_notes  {
+  width: 55%;
+  min-width: 300px;
+  min-height: 290px;
+  height: auto; 
+  border: 1px solid #efefef;
+  margin: 35px 5px 0px 20px;
+  padding: 12px;
+  border-radius: 8px 8px;
+  float: left;
+  position: relative;
+  }
+  
+  .error_message  {
+  margin: 15px auto 20px 2%;
+  width: 95%; 
+  padding: 2px 2px 4px 2px; 
+  font-size: 0.9em; 
+  color: white; 
+  background-color: #D10716; 
+  font-family: Verdana, Geneva, sans-serif; 
+  text-decoration: blink;
+  height: auto;
+  float: left;
+  }
+  
+/****** FOOTER ******/ 
+  
+footer  {                
+  position: relative;  
+  height: 30px;
+  width:98%;
+  clear:both;
+  display:block;
+  background-color: #DDF2F7;
+  opacity: 0.99;
+  margin: 0 auto 1%;
+  border-radius: 10px 10px 10px 10px;
+  border: 3px solid #a8edfc;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:  0 10px 30px rgba(0, 0, 0, 0.4); 
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  -o-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  .texto-peq   {
+  font-size:0.9em;
+  padding: 1.5px;
+  color:#006666;
+  }   
+  
+  .logo_solutip  {
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/logosolutip_16x16x32.png);
+  position: absolute;
+  margin-left: 4px;
+  margin-bottom: 14px;
+  float:left;
+  }
+   

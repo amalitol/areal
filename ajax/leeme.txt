@@ -1,0 +1,97 @@
+Esto es para explicar estos archivos que usan AJAX.
+------------------------------------------------------
+
+
+
+
+edit_contact.php  MÓDULO   
+--------------------> Este archivo .
+
+
+
+
+edit_local_inventario.php  MÓDULO INVENTARIO  
+--------------------> Este archivo permite editar un local seleccionado en el módulo inventario.  
+
+
+data_select_codigo_articulo.php   MÓDULO INVENTARIO
+--------------------> Este archivo es para el autocomplete de inventario -> movimientos -> seleccionar artículo por código
+
+search_descrip_articulo_by_code.php MÓDULO INVENTARIO -> Movimiento
+--------------------> Este archivo es para buscar la descripción del artículo en la BD dea cuerdo a su código
+
+
+search_articulo_stock_origen.php   MÓDULO INVENTARIO
+--------------------> Este archivo es el que me busca la cantidad de artículos que hay en el stock del LOCAL ORIGEN Y ME LO MUESTRA EN EL CAMPO text
+
+
+
+search_articulo_stock_destino.php   MÓDULO INVENTARIO
+--------------------> Este archivo es el que me busca la cantidad de artículos que hay en el stock del LOCAL de DESTINO Y ME LO MUESTRA EN EL CAMPO text
+
+
+confirm_codigo.php  MÓDULO INVENTARIO - Nuevo artículo
+--------------------> Este archivo me selecciona si ya existe un artículo con el código que pongo en la BD.
+
+
+
+confirm_ruc.php   MÓDULO PROVEEDORES - CLIENTES
+--------------------> Este archivo me selecciona si ya existe un proveedor/cliente con el mismo RUC en la BD.
+
+
+confirm_cedula.php  MÓDULO PROVEEDORES - CLIENTES
+--------------------> Este archivo me selecciona si ya existe un proveedor/cliente con la misma cédula en la BD.
+
+
+data_users_change_pass.php MÓDULO USERS -> option CHANGE PASSWORD
+-------------------->  Para el autocompletado del módulo usuarios al cual quiero cambiarle la contraseña desde el administrador
+
+
+
+compras_primer_modulo.php   MÓDULO COMPRAS -> Nueva Compra ( primer módulo de 3 )
+------------------------> Para insertar momentaneamente en la tabla registro_compras los datos de la del primer módulo de la Nueva Compra
+
+
+data_proveedor_RUC  MÓDULO COMPRAS -> Nueva Compra ( primer módulo de 3 )
+----------------->  Este archivo es para el autocomplete de compras -> Nueva Compra -> seleccionar proveedor y RUC.
+
+
+
+search_articulo_data.php   MÓDULO COMPRAS -> Nueva Compra ( segundo módulo de 3 )
+-----------------------> Para buscar el artículo seleccionado en cada fila de las compras y chequear que pertenecen al proveedor en cuestión y devolver sus datos. 
+     
+
+search_saldo_caja_origen.php  MÓDULO CAJA -> Crear Transacción 
+---------------------------> Para buscar el saldo de la caja en ese momento y devolver este.
+
+
+ventas_data_clientes.php MÓDULO VENTAS -> Nueva Venta
+---------------------------> Este archivo es para el autocomplete de ventas -> Nueva Venta -> seleccionar cliente e id.
+
+
+ventas_cliente_x_nombre.php MÓDULO VENTAS -> Nueva Venta 
+---------------------------> Devuelve los datos del cliente para hacer la venta de acuerdo a su nombre e id.
+
+
+ventas_cliente_x_num_cedula.php MÓDULO VENTAS -> Nueva Venta 
+---------------------------> Devuelve los datos del cliente para hacer la venta de acuerdo al número de cédula.
+
+
+
+ventas_cliente_x_ruc.php MÓDULO VENTAS -> Nueva Venta 
+---------------------------> Devuelve los datos del cliente para hacer la venta de acuerdo al RUC.
+
+
+
+ventas_search_articulo_data.php  MÓDULO VENTAS -> Nueva Venta
+---------------------------> Devuelve los datos del artículo seleccionado para la venta ( sección 2. DETALLE DE VENTAS )
+
+
+user_name_confirm.php  MÓDULO USUARIOS -> Nuevo Usuario
+---------------------------> Devuelve si el usuario está o no en la BD.Si está no deja salvar este usuario.
+
+
+
+
+
+
